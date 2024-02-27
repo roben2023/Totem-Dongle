@@ -72,7 +72,7 @@
             bindings = <
         &trans           &trans           &trans           &trans           &trans             &trans           &trans           &trans           &trans           &trans
         &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_NUMBER_4  &kp KP_NUMBER_5    &kp KP_NUMBER_6  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_NUMBER_0
-&trans  &trans           &trans           &trans           &trans           &trans             &trans           &trans           &trans           &trans           &trans           &trans
+&trans  &trans           &trans           &kp MINUS        &trans           &trans             &trans           &trans           &trans           &trans           &trans           &trans
                                           &trans           &trans           &trans             &trans           &trans           &trans
             >;
         };
@@ -87,22 +87,22 @@
             >;
         };
 
-        Fun {
-            label = "Fun";
+        Nav {
+            label = "Nav";
             bindings = <
-        &bootloader  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &kp END  &kp F1
-        &trans       &trans  &trans  &trans  &to 4     &trans  &trans  &trans  &trans   &kp F10
-&trans  &trans       &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans   &kp F20  &kp F7
-                             &trans  &trans  &trans    &trans  &trans  &trans
+        &trans  &trans  &gresc  &trans  &trans    &trans    &trans    &kp UP_ARROW  &trans     &trans
+        &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp LEFT  &kp DOWN      &kp RIGHT  &kp END
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans        &trans     &trans   &trans
+                        &trans  &trans  &trans    &trans    &trans    &trans
             >;
         };
 
         Gaming {
             bindings = <
-            &kp Z           &kp X  &kp C      &kp V         &sl 5     &trans  &trans  &trans  &trans  &trans
-            &kp TAB         &kp Q  &kp W      &kp E         &kp R     &trans  &trans  &trans  &trans  &trans
-&kp ESCAPE  &kp LEFT_SHIFT  &kp A  &kp S      &kp D         &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                                   &kp LCTRL  &kp LEFT_ALT  &trans    &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
 
             label = "Gaming";
